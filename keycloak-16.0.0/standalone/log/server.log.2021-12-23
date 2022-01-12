@@ -1,0 +1,110 @@
+2021-12-23 14:35:08,408 INFO  [org.jboss.modules] (main) JBoss Modules version 1.12.0.Final
+2021-12-23 14:35:08,806 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2021-12-23 14:35:08,817 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2021-12-23 14:35:08,902 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 16.0.0 (WildFly Core 17.0.3.Final) starting
+2021-12-23 14:35:08,906 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\workspaceKeycloackSpring\keycloak-16.0.0\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_202\jre
+	java.io.tmpdir = C:\Users\ELTI~1.LOP\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\workspaceReactSpring\apache-maven-3.8.4\bin;C:\ProgramData\chocolatey\bin;C:\Users\Elton Lopes\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Elton Lopes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Elton Lopes\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_202\bin;C:\gradle\gradle-7.3.2\bin;C:\Users\elti.lopes\AppData\Local\Android\Sdk\tools;C:\Users\elti.lopes\AppData\Local\Android\Sdk\tools\bin;C:\Users\elti.lopes\AppData\Local\Android\Sdk\platform-tools;C:\Users\elti.lopes\AppData\Local\Android\Sdk\emulator;%ANDROID_SDK_ROOT%\tools;%ANDROID_SDK_ROOT%\tools\bin;%ANDROID_SDK_ROOT%\platform-tools;C:\Users\elti.lopes\AppData\Local\Android\Sdk\emulator;C:\Users\elti.lopes\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2021.3\bin;;C:\Users\elti.lopes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Elton Lopes\AppData\Roaming\nvm;C:\Program Files\nodejs;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0
+	jboss.host.name = nbqfc-jhs9qj3
+	jboss.modules.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = nbqfc-jhs9qj3
+	jboss.qualified.host.name = nbqfc-jhs9qj3
+	jboss.server.base.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone
+	jboss.server.config.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\configuration
+	jboss.server.data.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\data
+	jboss.server.deploy.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\data\content
+	jboss.server.log.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\log
+	jboss.server.name = nbqfc-jhs9qj3
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\configuration/logging.properties
+	module.path = C:\workspaceKeycloackSpring\keycloak-16.0.0\modules
+	org.jboss.boot.log.file = C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_202\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\workspaceKeycloackSpring\keycloak-16.0.0\jboss-modules.jar -mp C:\workspaceKeycloackSpring\keycloak-16.0.0\modules org.jboss.as.standalone -Djboss.home.dir=C:\workspaceKeycloackSpring\keycloak-16.0.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp850
+	sun.stdout.encoding = cp850
+	user.country = BR
+	user.dir = C:\workspaceKeycloackSpring\keycloak-16.0.0\bin
+	user.home = C:\Users\elti.lopes
+	user.language = pt
+	user.name = elti.lopes
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2021-12-23 14:35:08,907 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\log\server.log -Dlogging.configuration=file:C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\configuration/logging.properties 
+2021-12-23 14:35:09,352 INFO  [org.wildfly.security] (ServerService Thread Pool -- 18) ELY00001: WildFly Elytron version 1.17.1.Final
+2021-12-23 14:35:09,783 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-12-23 14:35:09,800 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.4.Final
+2021-12-23 14:35:09,807 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.4.Final
+2021-12-23 14:35:09,831 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 36) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-12-23 14:35:09,835 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 49) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-12-23 14:35:09,844 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 38) WFLYRS0016: RESTEasy version 4.7.2.Final
+2021-12-23 14:35:09,845 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 45) WFLYNAM0001: Activating Naming Subsystem
+2021-12-23 14:35:09,872 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 35) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-12-23 14:35:09,880 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.2.Final)
+2021-12-23 14:35:09,901 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 44) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-12-23 14:35:09,955 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.2.12.Final starting
+2021-12-23 14:35:09,961 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-12-23 14:35:09,962 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2021-12-23 14:35:09,963 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-12-23 14:35:09,968 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-12-23 14:35:10,012 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 50) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2021-12-23 14:35:10,072 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file 'C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\configuration\application.keystore' does not exist. Used blank.
+2021-12-23 14:35:10,092 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore C:\workspaceKeycloackSpring\keycloak-16.0.0\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-12-23 14:35:10,088 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 50) WFLYUT0014: Creating file handler for path 'C:\workspaceKeycloackSpring\keycloak-16.0.0/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-12-23 14:35:10,671 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2021-12-23 14:35:10,674 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2021-12-23 14:35:10,674 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2021-12-23 14:35:10,710 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
