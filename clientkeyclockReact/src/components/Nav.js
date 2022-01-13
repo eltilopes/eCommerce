@@ -30,6 +30,11 @@ const Nav = () => {
                       Users
                     </a>
                   </li>
+                  <li>
+                    <a className="hover:text-blue-800" href="/uploadFile">
+                      Upload File
+                    </a>
+                  </li>
                 </ul>
              )}
              

@@ -6,6 +6,7 @@ import SecuredPage from "./pages/Securedpage";
 import UsersList from "./pages/user/UsersList";
 import keycloak from "./Keycloak"
 import CreateUser from "./pages/user/CreateUser";
+import UploadFiles from "./pages/upload/UploadFile";
 import UpdateUser from "./pages/user/UpdateUser";
 import { ReactKeycloakProvider } from "@react-keycloak/web";
 import PrivateRoute from "./helpers/PrivateRoute";
@@ -21,6 +22,7 @@ function App() {
          <Route exact path="/users" element={<UsersList />} />
          <Route exact path='/create' element={<CreateUser />} />
          <Route exact path='/update/:id' element={<UpdateUser />}/>
+         <Route exact path='/uploadFile' element={<UploadFiles />}/>
          <Route
              path="/secured"
              element={
