@@ -12,6 +12,10 @@
 
 ## Project Keyclock:
 - Keyclock 16
+- Custom Theme
+- Login Google
+- Custom DB
+- config email
 
 ## API Documentation:
 - Postman file
