@@ -1,3 +1,4 @@
+import Constaints from "./Constaints";
 
 class KeyclockUtils {
     validToken(keycloak) {
@@ -5,8 +6,8 @@ class KeyclockUtils {
         console.log(keycloak) 
 
         if(keycloak.authenticated){
-            localStorage.setItem("token", keycloak.token); //set keycloak token to localStorag
-            localStorage.setItem("uuidUser", keycloak.idTokenParsed.sub); //set uuidUser to localStorag
+            localStorage.setItem(Constaints.TOKEN, keycloak.token); //set keycloak token to localStorag
+            localStorage.setItem(Constaints.UUID_USER, keycloak.idTokenParsed.sub); //set uuidUser to localStorag
             //setJWTToken(keycloak.token) //set to axios Authorization Bearer 
         }
        
@@ -14,8 +15,8 @@ class KeyclockUtils {
          console.log('token expired', keycloak.token);
          keycloak.updateToken(30).success(() => {
              console.log('successfully get a new token', keycloak.token);
-             localStorage.setItem("token", keycloak.token); //set keycloak token to localStorag
-             localStorage.setItem("uuidUser", keycloak.idTokenParsed.sub); //set uuidUser to localStorag
+             localStorage.setItem(Constaints.TOKEN, keycloak.token); //set keycloak token to localStorag
+             localStorage.setItem(Constaints.UUID_USER, keycloak.idTokenParsed.sub); //set uuidUser to localStorag
          }).error(() => {console.log("error keycloak.updateToken")});
         }
        
