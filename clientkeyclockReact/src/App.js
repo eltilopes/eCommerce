@@ -15,24 +15,24 @@ function App() {
  return (
    <div>
      <ReactKeycloakProvider authClient={keycloak}>
-     <Nav />
-     <BrowserRouter>
-       <Routes>
-         <Route exact path="/" element={<WelcomePage />} />
-         <Route exact path="/users" element={<UsersList />} />
-         <Route exact path='/create' element={<CreateUser />} />
-         <Route exact path='/update/:id' element={<UpdateUser />}/>
-         <Route exact path='/uploadFile' element={<UploadFiles />}/>
-         <Route
-             path="/secured"
-             element={
-               <PrivateRoute>
-                 <SecuredPage />
-               </PrivateRoute>
-             }
-           />
-       </Routes>
-     </BrowserRouter>
+      <BrowserRouter>
+        <Nav />
+          <Routes>  
+            <Route exact path="/" element={<WelcomePage />} />
+            <Route exact path="/users" element={<UsersList />} />
+            <Route exact path='/create' element={<CreateUser />} />
+            <Route exact path='/update/:id' element={<UpdateUser />}/>
+            <Route exact path='/uploadFile' element={<UploadFiles />}/>
+            <Route
+                path="/secured"
+                element={
+                  <PrivateRoute>
+                    <SecuredPage />
+                  </PrivateRoute>
+                }
+              />
+          </Routes>
+      </BrowserRouter>
      </ReactKeycloakProvider>
    </div>
  );

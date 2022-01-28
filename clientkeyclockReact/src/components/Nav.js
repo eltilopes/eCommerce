@@ -1,9 +1,12 @@
 import React from "react";
 import { useKeycloak } from "@react-keycloak/web";
+import KeyclockUtils from "../utils/KeyclockUtils";
+import { NavLink } from "react-router-dom";
+
 
 const Nav = () => {
- const { keycloak, initialized } = useKeycloak();
- console.log(keycloak)   
+const { keycloak, initialized } = useKeycloak();
+KeyclockUtils.validToken(keycloak)
  return (
    <div>
      <div className="top-0 w-full flex flex-wrap">
@@ -15,25 +18,17 @@ const Nav = () => {
              </h1>
              {!!keycloak.authenticated && (
                   <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-                  <li>
-                    <a className="hover:text-blue-800" href="/">
-                      Home
-                    </a>
+                  <li>     
+                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/'>Home</NavLink>
                   </li>
                   <li>
-                    <a className="hover:text-blue-800" href="/secured">
-                      Secured Page
-                    </a>
+                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/secured'>Secured Page</NavLink>
                   </li> 
                   <li>
-                    <a className="hover:text-blue-800" href="/users">
-                      Users
-                    </a>
+                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/users'>Users</NavLink>
                   </li>
                   <li>
-                    <a className="hover:text-blue-800" href="/uploadFile">
-                      Upload File
-                    </a>
+                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/uploadFile'>Upload File</NavLink>
                   </li>
                 </ul>
              )}

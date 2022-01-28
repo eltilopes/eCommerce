@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\workspaceKeycloackSpring\ms-keycloack-spring-template"/>
 			<item value="C:\workspaceKeycloackSpring\demo"/>
 		</list>
 		<list key="projectNameTemplate">
