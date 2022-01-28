@@ -171,3 +171,11 @@
 2022-01-28 08:56:35,887 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 61) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
 2022-01-28 08:56:35,888 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 61) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
 2022-01-28 08:56:36,021 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0021: Registered web context: '/auth' for server 'default-server'
+2022-01-28 08:56:36,142 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
+2022-01-28 08:56:36,195 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-01-28 08:56:36,198 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 16.1.0 (WildFly Core 18.0.0.Final) started in 22978ms - Started 574 of 852 services (576 services are lazy, passive or on-demand)
+2022-01-28 08:56:36,202 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-01-28 08:56:36,202 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-01-28 09:18:16,303 WARN  [org.keycloak.connections.httpclient.DefaultHttpClientFactory] (default task-1) TruststoreProvider is disabled
+2022-01-28 11:17:03,479 WARN  [org.keycloak.services] (default task-2) KC-SERVICES0023: Smtp is not configured for the realm. Ignoring email verification authenticator
+2022-01-28 11:17:05,119 WARN  [org.keycloak.events] (default task-3) type=IDENTITY_PROVIDER_FIRST_LOGIN_ERROR, realmId=ecommerce, clientId=ecommerce, userId=9beeed86-c753-4240-bca6-55a2bed9db7f, ipAddress=127.0.0.1, error=invalid_user_credentials, identity_provider=facebook, auth_method=openid-connect, redirect_uri=http://localhost:3000/, identity_provider_identity=eltilopes@gmail.com, code_id=FKRuY8fCIunTY3wygs75kXI7ZvFQ3ESu1UD6dwevpgc, username=eltilopes, authSessionParentId=48a056b0-ab58-4ae2-924a-f540d2ac1f2a, authSessionTabId=l5yjUKXcUvY

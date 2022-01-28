@@ -8,6 +8,7 @@ const Home = () => {
      <figure class="bg-gray-100 rounded-xl p-8 dark:bg-gray-800">
       <img class="w-48 h-48 rounded-full mx-auto" src="https://www.suaimagem.med.br/img/service/3.jpg" alt="" width="384" height="512"/>
       <div class="pt-6 space-y-4">
+        <h1 className="text-green-800 text-4xl">Welcome to the Homepage</h1>
         <blockquote>
           <p class="text-lg font-medium">
             “Tailwind CSS is the only framework that I've seen scale
@@ -25,7 +26,6 @@ const Home = () => {
         </figcaption>
       </div>
     </figure>
-     <h1 className="text-green-800 text-4xl">Welcome to the Homepage</h1>
    </div>
  );
 };

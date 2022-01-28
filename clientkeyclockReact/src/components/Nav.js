@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 
 const Nav = () => {
-const { keycloak, initialized } = useKeycloak();
+const { keycloak } = useKeycloak();
 KeyclockUtils.validToken(keycloak)
  return (
    <div>
@@ -14,7 +14,7 @@ KeyclockUtils.validToken(keycloak)
          <nav className="flex justify-between bg-gray-200 text-blue-800 w-screen">
            <div className="px-5 xl:px-12 py-6 flex w-full items-center">
              <h1 className="text-3xl font-bold font-heading">
-               Keycloak React AUTH.
+               {process.env.REACT_APP_TITLE}
              </h1>
              {!!keycloak.authenticated && (
                   <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
