@@ -17,7 +17,7 @@ public class ResourceServerConfig extends WebSecurityConfigurerAdapter {
     public void configure(final HttpSecurity http) throws Exception {
     	http.cors();
         http
-                .authorizeRequests(authz -> authz.antMatchers("/security/**").authenticated())
+                .authorizeRequests(authz -> authz.antMatchers("/security/**","/comum/**").authenticated())
                 .oauth2ResourceServer()
                 .jwt().jwtAuthenticationConverter(keycloakJwtAuthenticationConverter)
                 ;

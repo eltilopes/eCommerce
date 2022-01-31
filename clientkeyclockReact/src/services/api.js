@@ -10,7 +10,7 @@ api.interceptors.request.use(async config => {
     const token = localStorage.getItem(Constaints.TOKEN);
     const uuid = localStorage.getItem(Constaints.UUID_USER);
     
-    api.defaults.headers.UUID_USER = uuid;
+    api.defaults.headers.UUIDUSER = uuid;
     if (token) {
       api.defaults.headers.authorization = `Bearer ${token}`;
     }

@@ -5,7 +5,7 @@ const Secured = () => {
   
   console.log("Lalaland" );
   
-  api.get("security")
+  api.get("comum/uuid")
   .then((response) => 
     console.log(response))
   .catch((err) => {
