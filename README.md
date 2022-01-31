@@ -12,6 +12,8 @@
 - Auth with keycloack 
 - BD MySQL
 - Set CorsConfig
+- Padrão BFF
+- Swagger Config
 
 ## Project Keyclock:
 - Keyclock 16
