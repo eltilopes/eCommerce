@@ -7,12 +7,17 @@
 - Set Variables .env (run build/start later set variable in .env)
 - API axios, set header with authorization
 
-## Project Spring:
+## Project Spring BFF:
 - Spring Boot 
 - Auth with keycloack 
-- BD MySQL
 - Set CorsConfig
 - Padrão BFF
+- Swagger Config
+- BFFResponse
+
+## Project Spring MS:
+- Spring Boot 
+- BFFResponse
 - Swagger Config
 
 ## Project Keyclock:
@@ -27,4 +32,4 @@
 - Postman file
 
 ## Ecommerce Analise:
-- eCommerce.pdf
+- https://github.com/eltilopes/keyclockReact/blob/main/eCommerce.pdf
