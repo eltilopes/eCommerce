@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "cba62416-8b58-4a6b-8b40-73ede1849796",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UploadFile",
+			"item": [
+				{
+					"name": "Upload File",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/elti.lopes/Downloads/file.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"upload"
+							]
+						},
+						"description": "Salvar arquivo http://localhost:8080/upload"
+					},
+					"response": []
+				},
+				{
+					"name": "Get File",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/files/file.pdf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"files",
+								"file.pdf"
+							]
+						},
+						"description": "http://localhost:8080/files/file.pdf"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Token Keyclock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "ecommerce",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "l52rmxn8C7faldTAs4aAMHAlYETQAPP3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "eltilopes",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "eltilopes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/ecommerce/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"ecommerce",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				},
+				"description": "Pegar Token keyclock\r\n\r\nhttp://localhost:8080/auth/realms/ecommerce/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "Get UUID User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "UUIDUSER",
+						"value": "badglksfd-0asdfb-adsfjkl-asdfgblkad",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1RHlUVXRydHBEYTNQX0d2X3FZOWRzMTVhUFBPbkRLYVFQdUJzYmhBZ2lvIn0.eyJleHAiOjE2NDM2NTkwNDEsImlhdCI6MTY0MzY1ODk4MSwianRpIjoiYTBlOWRmZmUtMzRlNy00Yzc0LWI3YmMtZjgzMTViNThiZTNiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2Vjb21tZXJjZSIsImF1ZCI6WyJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjliZWVlZDg2LWM3NTMtNDI0MC1iY2E2LTU1YTJiZWQ5ZGI3ZiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImVjb21tZXJjZSIsInNlc3Npb25fc3RhdGUiOiI0NzliYTExMC0wNjAxLTQzOWMtOTNhZS1hMjc1N2IwY2QwNDYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1lY29tbWVyY2UiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjQ3OWJhMTEwLTA2MDEtNDM5Yy05M2FlLWEyNzU3YjBjZDA0NiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImVsdG9uIGxvcGVzIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZWx0aWxvcGVzIiwiZ2l2ZW5fbmFtZSI6ImVsdG9uIiwiZmFtaWx5X25hbWUiOiJsb3BlcyIsImVtYWlsIjoiZWx0aWxvcGVzQGdtYWlsLmNvbSJ9.lJR7Pat79tQlKr1j4YagT9fB_D1pcc6Hk17CJjE3B3krPlBC4EMZo6D5cVZiNpUImZZyILTPQ5XujybcwZcYc8ju9Uy9YmkAJa1LXEK4EmuVaTQ6rodJFmPfL56tHEP6uLZor4t7TPE4C45wfKyz4pvUmezopRFPfBrtqksVeJmMOIsspZzrrDS8duEGAsBpCs-agJMZByG_uXaHj2xT2KRxUY8XGRmdMXC2DIHgW3WMf9SyUCyPQcartFIoXzKZEkNVjNNIf2S10jtdtMF7WMTN0-NqFl2gOcqA1ehiMUbznqwnPJU2yHTn9F3w7kFRZ7PlUv-8j3uRC8plKwtpyw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/comum/uuid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"comum",
+						"uuid"
+					]
+				},
+				"description": "Get UUID User \r\nhttp://localhost:8081/comum/uuid"
+			},
+			"response": []
+		}
+	]
+}
