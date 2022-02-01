@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\workspaceEcommerce\ms-product"/>
+			<item value="C:\workspaceKeycloackSpring\bff-web-ecommerce"/>
 			<item value="C:\workspaceKeycloackSpring\ms-keycloack-spring-template"/>
 			<item value="C:\workspaceKeycloackSpring\demo"/>
 		</list>

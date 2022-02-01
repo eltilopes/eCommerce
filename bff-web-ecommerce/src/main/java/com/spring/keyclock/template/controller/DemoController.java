@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping
-@Api(tags="Demo")
+@Api(tags="Demo Controller")
 public class DemoController {
 
 	@GetMapping

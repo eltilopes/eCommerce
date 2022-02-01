@@ -12,4 +12,22 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurer"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.CorsRegistry"/>
+    <fullyQualifiedTypeName name="io.swagger.annotations.Api"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.response.BFFResponse"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.controller.ComumController"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.service.ComumService"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.response.BuilderResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="io.swagger.annotations.ApiResponses"/>
+    <fullyQualifiedTypeName name="io.swagger.annotations.ApiResponse"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.responses.ApiResponses"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.responses.ApiResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.exceptions.BffNotCommunicateExternalServiceException"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.service.restclient.ProductServiceRestClient"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.service.ProductService"/>
 </qualifiedTypeNameHistroy>
