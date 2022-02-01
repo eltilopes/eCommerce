@@ -29,7 +29,7 @@
 - Config email
 
 ## API Documentation:
-- Postman file
+- https://github.com/eltilopes/keyclockReact/blob/main/Ecommerce.postman_collection.json
 
 ## Ecommerce Analise:
 - https://github.com/eltilopes/keyclockReact/blob/main/eCommerce.pdf
