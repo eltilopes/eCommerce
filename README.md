@@ -1,4 +1,4 @@
-# keyclockReactSpring
+# E-commerce : keyclockReactSpring
 
 ## Project React:
 - Auth with keycloack 
@@ -6,6 +6,7 @@
 - Example CRUD e NAV MENU
 - Set Variables .env (run build/start later set variable in .env)
 - API axios, set header with authorization
+- View with Cards
 
 ## Project Spring BFF:
 - Spring Boot 
@@ -14,10 +15,12 @@
 - Padrão BFF
 - Swagger Config
 - BFFResponse
+- Rest Template
 
 ## Project Spring MS:
 - Spring Boot 
-- BFFResponse
+- Config BD MySql
+- JpaRepository
 - Swagger Config
 
 ## Project Keyclock:
