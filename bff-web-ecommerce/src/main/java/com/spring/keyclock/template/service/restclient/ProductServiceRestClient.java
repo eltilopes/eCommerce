@@ -1,18 +1,23 @@
 package com.spring.keyclock.template.service.restclient;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import com.spring.keyclock.template.enums.MessageEnum;
 import com.spring.keyclock.template.exceptions.BffNotCommunicateExternalServiceException;
+import com.spring.keyclock.template.model.Product;
 import com.spring.keyclock.template.response.BFFResponse;
 import com.spring.keyclock.template.response.BuilderResponse;
 
+@Service
 public class ProductServiceRestClient {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductServiceRestClient.class);
@@ -31,9 +36,8 @@ public class ProductServiceRestClient {
 		
 		try {
 			
-			ResponseEntity<BFFResponse> response = restTemplate.getForEntity(url, BFFResponse.class);
-	        BFFResponse bffProductsResponse = response.getBody();
-	        bffProductsResponse.setHttpStatus(response.getStatusCode());
+			ResponseEntity<List> response = restTemplate.getForEntity(url, List.class);
+	        BFFResponse bffProductsResponse = BuilderResponse.buildOKCodeZeroWithResult(response.getStatusCode(), response.getBody());
 			return bffProductsResponse;
 		
 		} catch (HttpClientErrorException e) {	

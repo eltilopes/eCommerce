@@ -28,7 +28,7 @@ KeyclockUtils.validToken(keycloak)
                     <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/users'>Users</NavLink>
                   </li>
                   <li>
-                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/uploadFile'>Upload File</NavLink>
+                    <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/products'>Products</NavLink>
                   </li>
                 </ul>
              )}

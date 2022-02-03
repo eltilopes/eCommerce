@@ -30,7 +30,7 @@ public class ProductController {
 	private ProductService productService;
 	
 	@GetMapping()
-	@ApiOperation(value = "Get UUID User")
+	@ApiOperation(value = "Get Products")
 	@ApiResponses(value = {
 		    @ApiResponse(responseCode = "200", description = "Comando realizado com sucesso."),
 		    @ApiResponse(responseCode = "400", description = "Ocorreu um erro ao ..."),
