@@ -6,6 +6,7 @@
 - Example CRUD e NAV MENU
 - Set Variables .env (run build/start later set variable in .env)
 - API axios, set header with authorization
+- View with Cards
 
 ## Project Spring BFF:
 - Spring Boot 
@@ -19,6 +20,7 @@
 ## Project Spring MS:
 - Spring Boot 
 - Config BD MySql
+- JpaRepository
 - Swagger Config
 
 ## Project Keyclock:
