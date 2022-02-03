@@ -2,6 +2,7 @@ const TOKEN = "token";
 class Constaints {
     static TOKEN = "TOKEN";
     static UUID_USER = "UUIDUSER";
+    static FORNECEDOR = "fornecedor";
     
     // Simple function
     static printSum = (a, b) => {

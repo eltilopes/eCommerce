@@ -2,11 +2,26 @@ import React from "react";
 import { useKeycloak } from "@react-keycloak/web";
 import KeyclockUtils from "../utils/KeyclockUtils";
 import { NavLink } from "react-router-dom";
+import Constaints from "../utils/Constaints";
 
 
 const Nav = () => {
-const { keycloak } = useKeycloak();
+const { keycloak }  = useKeycloak();
+const isFornecedor = localStorage.getItem(Constaints.FORNECEDOR)
 KeyclockUtils.validToken(keycloak)
+function MenuItemNovoProduto() {
+  if(isFornecedor==="true"){
+    return (
+      <li>
+        <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/products'>New Product</NavLink>
+      </li>
+    )
+  }
+}
+function logout() {
+  KeyclockUtils.setUserInfosEmpty()
+  keycloak.logout()
+}
  return (
    <div>
      <div className="top-0 w-full flex flex-wrap">
@@ -30,6 +45,7 @@ KeyclockUtils.validToken(keycloak)
                   <li>
                     <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/products'>Products</NavLink>
                   </li>
+                  {MenuItemNovoProduto()}
                 </ul>
              )}
              
@@ -49,7 +65,7 @@ KeyclockUtils.validToken(keycloak)
                    <button
                      type="button"
                      className="text-blue-800"
-                     onClick={() => keycloak.logout()}
+                     onClick={() => logout()}
                    >
                      Logout ({keycloak.tokenParsed.preferred_username})
                    </button>

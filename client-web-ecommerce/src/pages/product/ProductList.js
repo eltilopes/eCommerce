@@ -33,9 +33,26 @@ export default function ProductList() {
                       <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{product.createDate}</span>
                       <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 
                         checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-right cursor-pointer" 
-                        type="checkbox" value="" id="flexCheckDefault3" />
+                        type="checkbox" value=""  id="flexCheckDefault3" />
                     </div>
                   </div>
+                ))}
+                 {products && products.map((product) => (
+                  <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                    <img class="w-full" src={product.image} alt=""/>
+                    <div class="px-6 py-4">
+                      <div class="flex mb-2">
+                        <span class="px-4 py-0.5 text-sm bg-red-500 rounded-full text-red-50">{product.createDate}</span>
+                      </div>
+                      <h4 class="mb-3 text-xl font-semibold tracking-tight text-green-600 uppercase">{product.name}</h4>
+                      <p class="leading-normal text-gray-700">{product.description}</p>
+                    </div>
+                    <div class="flex items-center justify-between p-4">
+                      <button class="px-4 py-2 bg-green-600 text-green-50">Order Now</button>
+                      <span class="text-xl text-green-600">R${product.price}</span>
+                    </div>
+                  </div>
+
                 ))}
             </div>         
         </div>

@@ -4,26 +4,48 @@ class KeyclockUtils {
     validToken(keycloak) {
         console.log("KeyclockService keycloak")   
         console.log(keycloak) 
-
         if(keycloak.authenticated){
-            localStorage.setItem(Constaints.TOKEN, keycloak.token); //set keycloak token to localStorag
-            localStorage.setItem(Constaints.UUID_USER, keycloak.idTokenParsed.sub); //set uuidUser to localStorag
-            //setJWTToken(keycloak.token) //set to axios Authorization Bearer 
+           this.setUserInfos(keycloak)
         }
        
+        console.log("fornecedor") 
+        console.log(localStorage.getItem(Constaints.FORNECEDOR)) 
         keycloak.onTokenExpired = () => {
-         console.log('token expired', keycloak.token);
-         keycloak.updateToken(30).success(() => {
-             console.log('successfully get a new token', keycloak.token);
-             localStorage.setItem(Constaints.TOKEN, keycloak.token); //set keycloak token to localStorag
-             localStorage.setItem(Constaints.UUID_USER, keycloak.idTokenParsed.sub); //set uuidUser to localStorag
+        keycloak.updateToken(30).success(() => {
+            this.setUserToken(keycloak)
          }).error(() => {console.log("error keycloak.updateToken")});
         }
        
-        console.log('uuidUser ', localStorage.getItem("uuidUser")); 
     }
   
- 
+    setUserInfos(keycloak){
+        this.setUserToken(keycloak.token)
+        this.setUserUUID(keycloak.idTokenParsed.sub)
+        this.setUserFornecedor(keycloak)
+    }
+
+    setUserInfosEmpty(){
+        this.setUserToken("")
+        this.setUserUUID("")
+        this.setUserFornecedor()
+    }
+
+    setUserToken(token){
+        localStorage.setItem(Constaints.TOKEN, token); //set keycloak token to localStorag
+    }
+
+    setUserUUID(uuid){
+        localStorage.setItem(Constaints.UUID_USER, uuid); //set uuidUser to localStorag
+    }
+
+    setUserFornecedor(keycloak){
+        if(keycloak && keycloak.realmAccess && keycloak.realmAccess.roles){
+            localStorage.setItem(Constaints.FORNECEDOR, keycloak.realmAccess.roles.includes(Constaints.FORNECEDOR)); //set role fornecedor  to localStorag
+        }else{
+            localStorage.setItem(Constaints.FORNECEDOR, false);
+        }
+    }
+
   }
   
   export default new KeyclockUtils();

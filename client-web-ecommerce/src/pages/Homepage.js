@@ -1,32 +1,27 @@
 import React from 'react';
-import api from '../services/api';
 
 const Home = () => {
  
  return (
-   <div>
-     <figure class="bg-gray-100 rounded-xl p-8 dark:bg-gray-800">
-      <img class="w-48 h-48 rounded-full mx-auto" src="https://www.suaimagem.med.br/img/service/3.jpg" alt="" width="384" height="512"/>
-      <div class="pt-6 space-y-4">
-        <h1 className="text-green-800 text-4xl">Welcome to the Homepage</h1>
-        <blockquote>
-          <p class="text-lg font-medium">
-            “Tailwind CSS is the only framework that I've seen scale
-            on large teams. It’s easy to customize, adapts to any design,
-            and the build size is tiny.”
-          </p>
-        </blockquote>
-        <figcaption class="font-medium">
-          <div class="text-sky-500 dark:text-sky-400">
-            Sarah Dayan
-          </div>
-          <div class="text-gray-700 dark:text-gray-500">
-            Staff Engineer, Algolia
-          </div>
-        </figcaption>
-      </div>
-    </figure>
-   </div>
+  <div
+  class="container max-w-lg px-4 py-32 mx-auto text-left bg-center bg-no-repeat bg-cover md:max-w-none md:text-center" >
+  <h1
+    class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-5xl">
+    <span class="inline md:block">Welcome To Larainfo Restaurant</span>
+  </h1>
+  <div class="mx-auto mt-2 text-green-50 md:text-center lg:text-lg">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatem ab necessitatibus illo praesentium
+    culpa excepturi quae commodi quaerat,
+  </div>
+  <div class="flex flex-col items-center mt-12 text-center">
+    <span class="relative inline-flex w-full md:w-auto">
+      <a href="#_" type="button"
+        class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-6 text-white bg-green-600 rounded-full lg:w-full md:w-auto hover:bg-green-500 focus:outline-none">
+        Buy Now
+      </a>
+     </span>
+  </div>
+</div>
  );
 };
 export default Home;
