@@ -7,6 +7,7 @@
 - Set Variables .env (run build/start later set variable in .env)
 - API axios, set header with authorization
 - View with Cards
+- NavMenu by role keyclock
 
 ## Project Spring BFF:
 - Spring Boot 
@@ -30,6 +31,7 @@
 - Login Facebook
 - Custom DB
 - Config email
+- Config RealmRoles
 
 ## API Documentation:
 - https://github.com/eltilopes/keyclockReact/blob/main/Ecommerce.postman_collection.json
