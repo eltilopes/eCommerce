@@ -14,10 +14,11 @@
 - Padrão BFF
 - Swagger Config
 - BFFResponse
+- Rest Template
 
 ## Project Spring MS:
 - Spring Boot 
-- BFFResponse
+- Config BD MySql
 - Swagger Config
 
 ## Project Keyclock:
