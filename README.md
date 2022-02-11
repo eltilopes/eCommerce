@@ -8,6 +8,7 @@
 - API axios, set header with authorization
 - View with Cards
 - NavMenu by role keyclock
+- Upload Image
 
 ## Project Spring BFF:
 - Spring Boot 
@@ -17,12 +18,15 @@
 - Swagger Config
 - BFFResponse
 - Rest Template
+- Post endpoint with multipartfile
 
 ## Project Spring MS:
 - Spring Boot 
 - Config BD MySql
 - JpaRepository
 - Swagger Config
+- table with fileImage
+- UUID CHAR(36)
 
 ## Project Keyclock:
 - Keyclock 16
