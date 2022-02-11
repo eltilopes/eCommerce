@@ -26,6 +26,19 @@ public class BuilderResponse {
 		
 	}
 	
+	public static BFFResponse buildWithError(ResponseMessageExceptionEnum messageExceptionEnum, Object result) {
+		
+		BFFResponse response = new BFFResponse();
+		MessageResponse messageResponse = new MessageResponse();
+		messageResponse.setCode(String.valueOf(messageExceptionEnum.getCode()));
+		messageResponse.setDescription(messageExceptionEnum.getDescription());
+		response.setResult(result);
+		response.getMessages().add(messageResponse);
+		response.getMetadata().put(MessageEnum.HTTP_STATUS.getName(), messageExceptionEnum.getStatus());		
+		return response;
+		
+	}
+	
 	public static BFFResponse buildCreated(Object result) {
 		
 		BFFResponse response = new BFFResponse();

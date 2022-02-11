@@ -3,9 +3,14 @@ package com.ms.product.service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ms.product.model.Product;
 import com.ms.product.repository.ProductRepository;
@@ -17,7 +22,18 @@ public class ProductService {
 	ProductRepository productRepository;
 	
 	public List<Product> getProducts() {
-		return productRepository.findAll();
+		List<Product> products = productRepository.findAll();
+		products.forEach(p-> {
+			if(StringUtils.isEmpty(p.getImage())) {
+				 String fileDownloadUri = ServletUriComponentsBuilder
+				          .fromCurrentContextPath()
+				          .path("/file/")
+				          .path(p.getId().toString())
+				          .toUriString();
+				 p.setImage(fileDownloadUri);
+			}
+		});
+		return products;
 	}
 	
 	public void deleteProducts() {
@@ -52,5 +68,16 @@ public class ProductService {
 		
 		productRepository.saveAll(products);
 		return products;
+	}
+
+	public Product saveProduct(Product product) {
+		product.setCreateDate(new Date());
+		return productRepository.save(product);
+	}
+
+	public Product getProduct(String id) {
+		UUID idProduct = UUID.fromString(id);
+		Optional<Product> opt = productRepository.findById(idProduct);
+		return opt.get();
 	}	
 }

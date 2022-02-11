@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import api from "../../services/api";
+import apiService from "../../services/ApiService";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
 
+  async function getProdutos() {
+      try {
+        fetch(process.env.REACT_APP_API + "/product", apiService.getHeader())
+        .then(res => res.json())
+        .then(
+          (result) => {
+            console.log(result)
+            setProducts(result.result)   
+          }
+        )         
+      } catch (error) {
+          console.log(error)
+      }
+  }
+
   useEffect(() => {
-    api
-      .get("/product")
-      .then((response) => {
-        setProducts(response.data.result)
-        })
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
+    getProdutos();
   }, []);
 
   return (

@@ -1,0 +1,2 @@
+2022-02-10 10:25:04,244 WARN  [org.keycloak.connections.httpclient.DefaultHttpClientFactory] (default task-5) TruststoreProvider is disabled
+2022-02-10 12:53:31,194 WARN  [org.keycloak.events] (default task-5) type=REFRESH_TOKEN_ERROR, realmId=ecommerce, clientId=ecommerce, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
