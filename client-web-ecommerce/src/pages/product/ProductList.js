@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import api from "../../services/api";
 import apiService from "../../services/ApiService";
+import { mascaraMonetaria } from "../../utils/Util";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -39,7 +40,7 @@ export default function ProductList() {
                       </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{product.price}</span>
+                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{mascaraMonetaria(product.price)}</span>
                       <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{product.createDate}</span>
                       <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 
                         checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-right cursor-pointer" 
@@ -59,7 +60,7 @@ export default function ProductList() {
                     </div>
                     <div class="flex items-center justify-between p-4">
                       <button class="px-4 py-2 bg-green-600 text-green-50">Order Now</button>
-                      <span class="text-xl text-green-600">R${product.price}</span>
+                      <span class="text-xl text-green-600">R${mascaraMonetaria(product.price)}</span>
                     </div>
                   </div>
 

@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="com.spring.keyclock.template.service.ComumService"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="com.spring.keyclock.template.response.BuilderResponse"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="io.swagger.annotations.ApiResponses"/>
     <fullyQualifiedTypeName name="io.swagger.annotations.ApiResponse"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.responses.ApiResponses"/>
@@ -30,4 +29,29 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.spring.keyclock.template.service.restclient.ProductServiceRestClient"/>
     <fullyQualifiedTypeName name="com.spring.keyclock.template.service.ProductService"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.parameters.RequestBody"/>
+    <fullyQualifiedTypeName name="javax.persistence.Transient"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.model.Product"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.ms.product.model.Product"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Parameter"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Type"/>
+    <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.apache.commons.codec.binary.CharSequenceUtils"/>
+    <fullyQualifiedTypeName name="org.springframework.core.codec.CharSequenceEncoder"/>
 </qualifiedTypeNameHistroy>

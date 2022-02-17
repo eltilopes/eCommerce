@@ -1,1 +1,1 @@
-2022-02-11 09:15:06,735 WARN  [org.keycloak.events] (default task-4) type=REFRESH_TOKEN_ERROR, realmId=ecommerce, clientId=ecommerce, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2022-02-17 08:39:40,454 WARN  [org.keycloak.events] (default task-4) type=REFRESH_TOKEN_ERROR, realmId=ecommerce, clientId=ecommerce, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret

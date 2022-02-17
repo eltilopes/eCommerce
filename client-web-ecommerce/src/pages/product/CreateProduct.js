@@ -5,6 +5,7 @@ function CreateProduct() {
   
     async function saveProduto(body) {
       try {
+
         fetch(process.env.REACT_APP_API + "/product", apiService.postHeaderMultiPartForm(body))
         .then(res => res.json())
         .then(
@@ -19,17 +20,16 @@ function CreateProduct() {
    }
 
    const handleSubmit = event => {
+     let file = selectedFiles[0]
      event.preventDefault();
      var product = {
        'name': name,
        'description': description,
        'price': price,
-       'image': image
+       'image': file.name
      }
      let formData = new FormData();
-
-     formData.append("file", selectedFiles[0]);
-     formData.append('product', new Blob([JSON.stringify(product)]))
+     formData.append("file", selectedFiles[0], JSON.stringify(product));
      saveProduto(formData)
    }
 
@@ -46,7 +46,7 @@ function CreateProduct() {
    
  
    return (
-       <form class="w-full max-w-lg mx-auto my-20" onSubmit={handleSubmit}>
+       <form class="w-full max-w-lg mx-auto my-20" accept-charset="utf-8" onSubmit={handleSubmit}>
        
        <div class="flex flex-wrap mx-3 mb-1">
            <div class="w-full px-3">
@@ -101,6 +101,7 @@ function CreateProduct() {
               <label className="inline-flex items-center justify-center px-7 py-2 text-base font-bold rounded leading-6 text-white bg-gray-200 md:w-auto hover:text-blue-800 focus:outline-none">
                 <input class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-6 text-white bg-gray-200 md:w-auto hover:text-blue-800 focus:outline-none" 
                     type="file" 
+                    accept=".jpg, .jpeg, .png"
                     onChange={selectFile} />
               </label>
               <div className="progress">

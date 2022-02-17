@@ -33,12 +33,15 @@ public class ProductService {
 		return productServiceRestClient.getProducts();
 	}
 
-	public BFFResponse saveProduct(String uuidUser, String productJson, MultipartFile fileImage) {
+	public BFFResponse saveProduct(String uuidUser, MultipartFile fileImage) {
 		Product product = null;
+		String productJson = fileImage.getOriginalFilename();
 		try {
+			productJson = productJson.replace("%22", "\\\"").replace("\\", "");
 			product = new ObjectMapper().readValue(productJson, Product.class);
 
 		    String fileName = StringUtils.cleanPath(fileImage.getOriginalFilename());
+		    product.setImage("");
 			product.setNameFileImage(fileName);
 			product.setTypeFileImage(fileImage.getContentType());
 			product.setDataFileImage(fileImage.getBytes());

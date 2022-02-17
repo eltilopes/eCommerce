@@ -3,6 +3,8 @@ package com.spring.keyclock.template.model;
 import java.io.Serializable;
 import java.util.UUID;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,5 +24,6 @@ public class Product implements Serializable{
 	private String typeFileImage;
 	private byte[] dataFileImage;
 	private UUID idFornecedor;
+	private MultipartFile fileImage;
 	
 }

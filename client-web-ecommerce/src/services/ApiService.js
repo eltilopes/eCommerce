@@ -17,7 +17,7 @@ class ApiService {
     const uuid = localStorage.getItem(Constaints.UUID_USER);
     return{
       method: method,
-      headers: { 'Content-Type': 'application/json; charset=UTF-8' , UUIDUSER : uuid , 'Authorization' :  `Bearer ${token}` },
+      headers: { 'Accept-Charset': 'multipart/form-data' , 'Content-Type': 'charset=UTF-8' , UUIDUSER : uuid , 'Authorization' :  `Bearer ${token}` },
       body: JSON.stringify(body)
     }  
   };  

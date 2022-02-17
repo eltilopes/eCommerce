@@ -1,11 +1,12 @@
 
 
 class UploadFilesService {
-  upload(file, onUploadProgress) {
+  upload(file,product, onUploadProgress) {
     let formData = new FormData();
 
     formData.append("file", file);
-
+    formData.append('product', product)
+    return 
   
   }
 

@@ -50,7 +50,7 @@ public class ProductController {
 	}
 	
 
-	  @PostMapping(consumes = { MediaType.APPLICATION_JSON_VALUE,MediaType.MULTIPART_FORM_DATA_VALUE })
+	  @PostMapping(consumes = { MediaType.APPLICATION_JSON_VALUE,MediaType.MULTIPART_FORM_DATA_VALUE }, produces = MediaType.APPLICATION_JSON_VALUE)
 	  @ApiOperation(value = "Save Product")
 	  @ApiResponses(value = {
 			    @ApiResponse(responseCode = "200", description = "Comando realizado com sucesso."),
@@ -58,10 +58,9 @@ public class ProductController {
 			})
 	  public ResponseEntity<BFFResponse> uploadFile(
 				@RequestHeader(Constaints.UUID_USER) String uuidUser,
-			  	@RequestPart("product")  String productJson,
 	            @RequestPart("file") MultipartFile fileImage) {
 
-	    return  ResponseEntity.status(HttpStatus.OK).body(productService.saveProduct(uuidUser, productJson, fileImage));
+	    return  ResponseEntity.status(HttpStatus.OK).body(productService.saveProduct(uuidUser, fileImage));
 	   
 	  }
 
