@@ -36,7 +36,6 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
-    <fullyQualifiedTypeName name="com.spring.keyclock.template.model.Product"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
@@ -54,4 +53,5 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.apache.commons.codec.binary.CharSequenceUtils"/>
     <fullyQualifiedTypeName name="org.springframework.core.codec.CharSequenceEncoder"/>
+    <fullyQualifiedTypeName name="com.spring.keyclock.template.model.Product"/>
 </qualifiedTypeNameHistroy>

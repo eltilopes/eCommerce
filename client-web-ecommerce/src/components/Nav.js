@@ -37,6 +37,9 @@ const Nav = () => {
                     <li>
                       <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/products'>Products</NavLink>
                     </li>
+                    <li>
+                      <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/sign'>Sign</NavLink>
+                    </li>
                     <li  hidden={isFornecedor==="false"}>
                       <NavLink exact={true} className="navbar-brand" activeClassName='active' to='/product/create'>New Product</NavLink>
                     </li>
